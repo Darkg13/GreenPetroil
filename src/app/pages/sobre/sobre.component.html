@@ -1,0 +1,98 @@
+<gp-page-hero
+  titulo="Quem somos"
+  subtitulo="Uma empresa de energia que une a produção de petróleo e gás ao cuidado com o meio ambiente e com as pessoas."
+/>
+
+<section class="section" aria-labelledby="historia-titulo">
+  <div class="container two-col">
+    <div>
+      <h2 id="historia-titulo">Nossa história</h2>
+      <p>
+        A GreenPetroil nasceu em 1974 com uma convicção simples: o mundo precisa de energia confiável
+        e pode obtê-la de forma cada vez mais responsável. De uma pequena equipe de prospecção,
+        crescemos até nos tornar uma das maiores companhias de petróleo listadas em bolsa do país.
+      </p>
+      <p>
+        Ao longo dessa trajetória, reinvestimos parte relevante dos resultados em tecnologia, em
+        captura de carbono e em ações sociais, mostrando que produção de energia e cuidado com o
+        planeta caminham juntos.
+      </p>
+    </div>
+
+    <ol class="timeline" aria-label="Linha do tempo da empresa">
+      @for (marco of marcos; track marco.ano) {
+        <li>
+          <strong>{{ marco.ano }}</strong>
+          {{ marco.texto }}
+        </li>
+      }
+    </ol>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="mv-titulo">
+  <div class="container">
+    <h2 id="mv-titulo">Missão e visão</h2>
+    <div class="grid grid-2">
+      <article class="panel">
+        <h3>Missão</h3>
+        <p>
+          Fornecer energia segura e confiável à sociedade, explorando petróleo e gás com excelência
+          operacional, inovação e responsabilidade ambiental.
+        </p>
+      </article>
+      <article class="panel">
+        <h3>Visão</h3>
+        <p>
+          Ser referência mundial em energia responsável, liderando a convivência entre a produção de
+          petróleo e a preservação ambiental até 2040.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="valores-titulo">
+  <div class="container">
+    <h2 id="valores-titulo">Nossos valores</h2>
+    <ul class="grid grid-3" role="list">
+      @for (valor of valores; track valor.titulo) {
+        <li class="panel">
+          <h3>{{ valor.titulo }}</h3>
+          <p>{{ valor.descricao }}</p>
+        </li>
+      }
+    </ul>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="ambiente-titulo">
+  <div class="container">
+    <h2 id="ambiente-titulo">O petróleo como parte do futuro do meio ambiente</h2>
+    <p class="section-lead">
+      Acreditamos que a transição energética será construída com a indústria, não sem ela. É a
+      energia que produzimos hoje que financia as soluções de amanhã.
+    </p>
+    <ul class="grid grid-3" role="list">
+      <li class="panel">
+        <h3>Captura de carbono</h3>
+        <p>Tecnologias que retêm CO₂ das operações e o armazenam com segurança no subsolo.</p>
+      </li>
+      <li class="panel">
+        <h3>Florestas e biodiversidade</h3>
+        <p>Programas de reflorestamento e proteção de ecossistemas nas áreas onde atuamos.</p>
+      </li>
+      <li class="panel">
+        <h3>Eficiência operacional</h3>
+        <p>Plataformas e refinarias projetadas para usar menos água e menos energia por barril.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<gp-cta-banner
+  titulo="Conheça o que fazemos pelas comunidades"
+  texto="Educação, saúde, qualificação profissional e meio ambiente: veja nossos projetos sociais."
+  rotulo="Projetos sociais"
+  rota="/projetos-sociais"
+/>

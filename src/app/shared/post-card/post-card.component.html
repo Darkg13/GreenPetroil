@@ -1,0 +1,16 @@
+<article class="card">
+  <div class="card-media" aria-hidden="true"></div>
+  <div class="card-body">
+    <p class="tag">{{ post().categoria }}</p>
+    <h3>{{ post().titulo }}</h3>
+    <p class="meta">
+      <time [attr.datetime]="post().data">{{ post().data | date: 'longDate' }}</time>
+      · {{ post().autor }}
+    </p>
+    <p>{{ post().resumo }}</p>
+    <a class="link-more" [routerLink]="['/noticias', post().id]">
+      Ler post completo<span class="visually-hidden">: {{ post().titulo }}</span>
+      <span aria-hidden="true"> →</span>
+    </a>
+  </div>
+</article>

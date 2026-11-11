@@ -1,0 +1,51 @@
+<div class="container section">
+  <nav class="breadcrumb" aria-label="Trilha de navegação">
+    <ol>
+      <li><a routerLink="/">Início</a></li>
+      <li aria-current="page">Notícia</li>
+    </ol>
+  </nav>
+
+  @switch (estado()) {
+    @case ('carregando') {
+      <gp-state-message tipo="carregando" mensagem="Carregando notícia…" />
+    }
+    @case ('erro') {
+      <gp-state-message tipo="erro" [mensagem]="mensagemErro()" (tentarNovamente)="carregar()" />
+    }
+    @case ('ok') {
+      @if (post(); as p) {
+        <article class="post">
+          <header>
+            <p class="tag">{{ p.categoria }}</p>
+            <h1>{{ p.titulo }}</h1>
+            <p class="meta">
+              <time [attr.datetime]="p.data">{{ p.data | date: 'longDate' }}</time>
+              · Por {{ p.autor }}
+            </p>
+            <p class="lead lead-dark">{{ p.resumo }}</p>
+          </header>
+
+          @for (paragrafo of p.conteudo; track $index) {
+            <p>{{ paragrafo }}</p>
+          }
+
+          <footer>
+            <a class="btn btn-dark" routerLink="/">← Voltar para o início</a>
+          </footer>
+        </article>
+
+        @if (outrosPosts().length > 0) {
+          <section class="read-more" aria-labelledby="leia-tambem">
+            <h2 id="leia-tambem">Leia também</h2>
+            <ul class="grid grid-3" role="list">
+              @for (outro of outrosPosts(); track outro.id) {
+                <li><gp-post-card [post]="outro" /></li>
+              }
+            </ul>
+          </section>
+        }
+      }
+    }
+  }
+</div>

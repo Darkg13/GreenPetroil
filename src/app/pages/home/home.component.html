@@ -1,0 +1,82 @@
+<section class="hero" aria-labelledby="hero-titulo">
+  <div class="container hero-inner">
+    <p class="eyebrow">Energia responsável</p>
+    <h1 id="hero-titulo">Energia que move o presente e constrói o futuro</h1>
+    <p class="lead">
+      O petróleo e o gás seguem essenciais para a vida moderna. Na GreenPetroil, cada barril produzido
+      financia tecnologias mais limpas, recuperação de florestas e projetos que transformam
+      comunidades.
+    </p>
+    <div class="hero-actions">
+      <a class="btn" routerLink="/sobre">Conheça a GreenPetroil</a>
+      <a class="btn btn-outline" routerLink="/projetos-sociais">Nossos projetos sociais</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="feed-titulo">
+  <div class="container">
+    <h2 id="feed-titulo">Últimas notícias</h2>
+    <p class="section-lead">
+      Acompanhe os grandes projetos de exploração que estão ampliando a oferta de energia do país com
+      tecnologia e segurança.
+    </p>
+
+    @switch (estadoPosts()) {
+      @case ('carregando') {
+        <gp-state-message tipo="carregando" mensagem="Carregando as últimas notícias…" />
+      }
+      @case ('erro') {
+        <gp-state-message
+          tipo="erro"
+          mensagem="Não foi possível carregar as notícias agora."
+          (tentarNovamente)="carregarPosts()"
+        />
+      }
+      @case ('ok') {
+        <ul class="grid grid-3" role="list">
+          @for (post of posts(); track post.id) {
+            <li><gp-post-card [post]="post" /></li>
+          }
+        </ul>
+      }
+    }
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="projetos-titulo">
+  <div class="container">
+    <h2 id="projetos-titulo">Projetos sociais em destaque</h2>
+    <p class="section-lead">
+      Nosso compromisso vai além da operação: investimos em educação, saúde, qualificação profissional
+      e meio ambiente nas regiões onde atuamos.
+    </p>
+
+    @switch (estadoProjetos()) {
+      @case ('carregando') {
+        <gp-state-message tipo="carregando" mensagem="Carregando projetos sociais…" />
+      }
+      @case ('erro') {
+        <gp-state-message
+          tipo="erro"
+          mensagem="Não foi possível carregar os projetos sociais agora."
+          (tentarNovamente)="carregarProjetos()"
+        />
+      }
+      @case ('ok') {
+        <ul class="grid grid-3" role="list">
+          @for (projeto of projetos(); track projeto.id) {
+            <li><gp-projeto-card [projeto]="projeto" /></li>
+          }
+        </ul>
+      }
+    }
+  </div>
+</section>
+
+<gp-cta-banner
+  titulo="Conheça nossa história e nossos valores"
+  texto="Mais de 50 anos de trabalho, com segurança, inovação e respeito ao meio ambiente."
+  rotulo="Quem somos"
+  rota="/sobre"
+/>

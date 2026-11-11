@@ -1,0 +1,120 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "titulo": "Parceria vai reflorestar 10 mil hectares em áreas de influência das operações",
+      "resumo": "Acordo com organizações ambientais prevê o plantio de espécies nativas e a criação de corredores ecológicos em cinco anos.",
+      "categoria": "Meio ambiente",
+      "data": "2026-08-21",
+      "autor": "Equipe GreenPetroil",
+      "conteudo": [
+        "A GreenPetroil firmou uma parceria com três organizações ambientais para reflorestar 10 mil hectares nas regiões vizinhas às suas operações. O plano prevê o plantio de espécies nativas e a criação de corredores ecológicos que conectam fragmentos de mata hoje isolados.",
+        "O trabalho será executado em cinco anos, com viveiros locais abastecendo as mudas e priorizando a contratação de moradores das comunidades do entorno.",
+        "O monitoramento será feito por imagens de satélite e relatórios públicos, publicados a cada semestre, para que qualquer pessoa possa acompanhar a evolução do projeto."
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Nova unidade de refino reduz em 40% o consumo de água",
+      "resumo": "Sistema de reúso em circuito fechado diminui a captação e devolve água tratada ao ciclo industrial.",
+      "categoria": "Operações",
+      "data": "2026-09-12",
+      "autor": "Equipe GreenPetroil",
+      "conteudo": [
+        "A nova unidade de refino da companhia entrou em operação com um sistema de reúso de água em circuito fechado, que reduz em cerca de 40% a captação em comparação com as unidades anteriores.",
+        "A água utilizada nos processos passa por tratamento avançado e retorna ao ciclo industrial, e apenas o excedente, dentro dos parâmetros ambientais, é devolvido ao meio.",
+        "A solução será replicada nas demais refinarias da empresa ao longo dos próximos três anos."
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Perfuração em águas ultraprofundas: tecnologia a serviço da segurança",
+      "resumo": "Novos sistemas de monitoramento em tempo real acompanham cada etapa da perfuração, a milhares de metros de profundidade.",
+      "categoria": "Tecnologia",
+      "data": "2026-09-30",
+      "autor": "Equipe GreenPetroil",
+      "conteudo": [
+        "Explorar petróleo em águas ultraprofundas exige tecnologia de ponta. Por isso, a GreenPetroil implantou um centro de monitoramento que acompanha, em tempo real, sensores instalados em poços, risers e plataformas.",
+        "Modelos de análise de dados identificam variações de pressão e temperatura antes que se tornem um problema, permitindo ações preventivas e reduzindo o risco de incidentes.",
+        "A tecnologia também otimiza as operações: menos paradas, menos consumo de combustível nas embarcações de apoio e menor impacto ambiental por barril produzido."
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Campo Horizonte Sul entra em operação com captura de carbono integrada",
+      "resumo": "Primeiro campo da companhia projetado desde o início para reinjetar o CO₂ produzido junto ao petróleo.",
+      "categoria": "Exploração",
+      "data": "2026-10-15",
+      "autor": "Equipe GreenPetroil",
+      "conteudo": [
+        "O Campo Horizonte Sul iniciou a produção nesta quinzena e é o primeiro da GreenPetroil concebido, desde o projeto, com captura e reinjeção de carbono integradas à plataforma.",
+        "O CO₂ separado do gás produzido é comprimido e reinjetado em reservatórios seguros, evitando que seja liberado na atmosfera. A meta é reinjetar mais de 90% do volume gerado pelo campo.",
+        "Com capacidade para 120 mil barris por dia, Horizonte Sul reforça a oferta nacional de energia e serve de modelo para os próximos desenvolvimentos da companhia."
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Projeto Aurora: a maior campanha de exploração offshore da nossa história",
+      "resumo": "Três novas plataformas e 14 poços exploratórios vão ampliar a produção nacional de energia nos próximos oito anos.",
+      "categoria": "Exploração",
+      "data": "2026-10-28",
+      "autor": "Equipe GreenPetroil",
+      "conteudo": [
+        "A GreenPetroil anunciou o Projeto Aurora, a maior campanha de exploração offshore já realizada pela companhia. Serão três novas plataformas de produção e 14 poços exploratórios em uma área de 2.300 km² na Bacia de Aurora, a 180 km da costa.",
+        "O projeto prevê investimento de R$ 38 bilhões ao longo de oito anos e a geração de aproximadamente 9 mil empregos diretos e indiretos durante as fases de construção e operação.",
+        "Todas as plataformas serão projetadas com eletrificação parcial, sistemas de reinjeção de gás e monitoramento ambiental contínuo, para reduzir a intensidade de emissões por barril produzido.",
+        "A primeira campanha de perfuração começa no segundo semestre de 2027, após a conclusão do licenciamento ambiental e das consultas às comunidades pesqueiras da região."
+      ]
+    }
+  ],
+  "projetosSociais": [
+    {
+      "id": 1,
+      "nome": "Escola Energia Viva",
+      "categoria": "Educação",
+      "local": "Macaé/RJ",
+      "descricao": "Reforço escolar, laboratórios de ciências e bolsas de estudo para crianças e jovens das comunidades vizinhas às operações.",
+      "beneficiados": 4200
+    },
+    {
+      "id": 2,
+      "nome": "Mãos à Obra",
+      "categoria": "Qualificação profissional",
+      "local": "Santos/SP",
+      "descricao": "Cursos gratuitos de soldagem, elétrica e segurança do trabalho, com encaminhamento para vagas na cadeia de energia.",
+      "beneficiados": 3150
+    },
+    {
+      "id": 3,
+      "nome": "Mar Limpo",
+      "categoria": "Meio ambiente",
+      "local": "Litoral Norte/SP",
+      "descricao": "Mutirões de limpeza de praias e apoio a cooperativas de pescadores artesanais com equipamentos e capacitação.",
+      "beneficiados": 1800
+    },
+    {
+      "id": 4,
+      "nome": "Saúde nas Comunidades",
+      "categoria": "Saúde",
+      "local": "Vitória/ES",
+      "descricao": "Unidades móveis com consultas, exames preventivos e campanhas de vacinação em bairros de difícil acesso.",
+      "beneficiados": 9600
+    },
+    {
+      "id": 5,
+      "nome": "Raízes Verdes",
+      "categoria": "Meio ambiente",
+      "local": "Bahia",
+      "descricao": "Viveiros comunitários que produzem mudas nativas, gerando renda para famílias e abastecendo os projetos de reflorestamento.",
+      "beneficiados": 2300
+    },
+    {
+      "id": 6,
+      "nome": "Futuro em Campo",
+      "categoria": "Esporte e cidadania",
+      "local": "Niterói/RJ",
+      "descricao": "Escolinhas de esporte e atividades culturais no contraturno escolar, com acompanhamento de assistentes sociais.",
+      "beneficiados": 2750
+    }
+  ]
+}

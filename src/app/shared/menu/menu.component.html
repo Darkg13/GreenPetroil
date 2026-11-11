@@ -1,0 +1,28 @@
+<nav id="menu-principal" class="site-nav" aria-label="Principal" [class.aberto]="aberto()">
+  <ul>
+    <li>
+      <a
+        routerLink="/"
+        routerLinkActive="ativo"
+        [routerLinkActiveOptions]="{ exact: true }"
+        ariaCurrentWhenActive="page"
+        (click)="navegou.emit()"
+        >Início</a
+      >
+    </li>
+    <li>
+      <a routerLink="/sobre" routerLinkActive="ativo" ariaCurrentWhenActive="page" (click)="navegou.emit()"
+        >Quem somos</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/projetos-sociais"
+        routerLinkActive="ativo"
+        ariaCurrentWhenActive="page"
+        (click)="navegou.emit()"
+        >Projetos sociais</a
+      >
+    </li>
+  </ul>
+</nav>

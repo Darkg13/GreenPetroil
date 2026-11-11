@@ -1,0 +1,13 @@
+@if (tipo() === 'carregando') {
+  <p class="state" role="status">
+    <span class="spinner" aria-hidden="true"></span>
+    {{ mensagem() }}
+  </p>
+} @else {
+  <div class="state state-error" role="alert">
+    <p>{{ mensagem() }}</p>
+    <button type="button" class="btn btn-dark" (click)="tentarNovamente.emit()">
+      Tentar novamente
+    </button>
+  </div>
+}

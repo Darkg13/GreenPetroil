@@ -1,0 +1,41 @@
+<gp-page-hero
+  titulo="Projetos sociais"
+  subtitulo="Iniciativas mantidas pela GreenPetroil para gerar oportunidades e cuidar das comunidades onde atuamos."
+/>
+
+<section class="section" aria-labelledby="lista-projetos">
+  <div class="container">
+    <h2 id="lista-projetos">O que mantemos</h2>
+
+    @switch (estado()) {
+      @case ('carregando') {
+        <gp-state-message tipo="carregando" mensagem="Carregando projetos sociais…" />
+      }
+      @case ('erro') {
+        <gp-state-message
+          tipo="erro"
+          mensagem="Não foi possível carregar os projetos sociais agora."
+          (tentarNovamente)="carregar()"
+        />
+      }
+      @case ('ok') {
+        <p class="section-lead">
+          Juntos, nossos {{ projetos().length }} projetos já beneficiaram
+          <strong>{{ totalBeneficiados() | number }}</strong> pessoas.
+        </p>
+        <ul class="grid grid-3" role="list">
+          @for (projeto of projetos(); track projeto.id) {
+            <li><gp-projeto-card [projeto]="projeto" /></li>
+          }
+        </ul>
+      }
+    }
+  </div>
+</section>
+
+<gp-cta-banner
+  titulo="Veja também nossas últimas notícias"
+  texto="Acompanhe os projetos de exploração e as iniciativas ambientais da companhia."
+  rotulo="Ir para o início"
+  rota="/"
+/>
