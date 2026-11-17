@@ -71,7 +71,7 @@ O projeto usa **CSR** (Client-Side Rendering): o navegador baixa o JavaScript e 
 
 ## Integrantes
 
-- Davi Olveira
+- Davi Oliveira S.
 - Gustavo Simões
 - Gustavo Silvestre
 - Marco Aurélio
